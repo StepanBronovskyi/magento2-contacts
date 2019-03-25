@@ -1,6 +1,6 @@
 # magento2-contacts
 
-##Custom magento 2 module for contact management:
+## Custom magento 2 module for contact management:
 - Contact form(firstname, lastname, email, phone);
 - Utilize Magento form validation;
 - Display of the form in mobile;
@@ -9,16 +9,16 @@
 - Backend admin grid view that displays the contents of the table;
 - Possibility to add answer on contact request from admin and display answer at frontend.
 
-##frontend routes
+## frontend routes
 
 root/contacts/index/ - contact form
 root/contacts/view/index/ - display contacts list
 
-##backend route
+## backend route
 
 root/admin/contact/grid/index/ - admin grid(list of contacts and contact acceptance)
 
-##Used technologies:
+## Used technologies:
 - magento 2;
 - php;
 - mysql;
