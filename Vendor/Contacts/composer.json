@@ -1,0 +1,23 @@
+{
+  "name": "vendor/contacts",
+  "description": "summary",
+  "license": [
+    "OSL-3.0"
+  ],
+  "type": "magento2-module",
+  "version": "0.0.2",
+  "authors": [
+    {
+      "name": "Stepan Bronovskyi",
+      "email": "bronovskyi74@gmail.com",
+      "homepage": "https://github.com/StepanBronovskyi/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Vendor\\Contacts\\": ""
+    }
+  }
+}

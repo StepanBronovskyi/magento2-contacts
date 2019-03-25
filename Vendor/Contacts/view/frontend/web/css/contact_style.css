@@ -1,0 +1,37 @@
+input {
+    width: 30% !important;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 480px)  {
+    input {
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input {
+        width: 100% !important;
+    }
+}
+
+.accepted {
+    color: green;
+    font-weight: bold;
+}
+
+.not-accepted {
+    color: grey;
+    font-weight: bold;
+}
+
+.contact-navigate {
+    background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}

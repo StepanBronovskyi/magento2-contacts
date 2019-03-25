@@ -1,0 +1,29 @@
+<?php
+$contacts = $block->getContacts();
+?>
+<a class="contact-navigate" href="<?= $block->getCreateContactUrl()?>">Create contact</a>
+<br><br>
+<?php if(count($contacts)):?>
+<table>
+    <tr>
+        <th>№</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Accepted</th>
+    </tr>
+    <?php foreach($contacts as $key => $contact):?>
+        <tr>
+            <td><?=$key+1?></td>
+            <td><?=$contact['first_name']?></td>
+            <td><?=$contact['last_name']?></td>
+            <td><?=$contact['email']?></td>
+            <td><?=$contact['phone']?></td>
+            <td class="<?=$contact['accepted'] ? "accepted" : "not-accepted"?>">
+                <?=$contact['accepted'] ? "Accepted" : "Not accepted"?>
+            </td>
+        </tr>
+    <?php endforeach;?>
+</table>
+<?php endif;?>

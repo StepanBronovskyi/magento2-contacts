@@ -1,0 +1,40 @@
+<a class="contact-navigate" href="<?= $block->getContactsUrl()?>">Contacts list</a>
+<br><br>
+<div id="form-container">
+<form class="form contact-inchoo" action="<?php echo $this->getUrl('contacts/post/index'); ?>" id="contact-form" method="post" data-mage-init='{"validation":{}}' data-hasrequired="* Required Fields">
+    <fieldset class="fieldset">
+        <div class="field name required">
+            <label class="label" for="first_name"><span>First name</span></label>
+            <div class="control">
+                <input name="first_name" id="first_name" title="First name" value="" class="input-text required" type="text" />
+            </div>
+        </div>
+        <div class="field name required">
+            <label class="label" for="last_name"><span>Last name</span></label>
+            <div class="control">
+                <input name="last_name" id="last_name" title="Last name" value="" class="input-text required" type="text" />
+            </div>
+        </div>
+        <div class="field name required">
+            <label class="label" for="email"><span>Email</span></label>
+            <div class="control">
+                <input name="email" id="email" title="Email" value="" type="text" class="validate-email" />
+            </div>
+        </div>
+        <div class="field name required">
+            <label class="label" for="phone"><span>Phone</span></label>
+            <div class="control">
+                <input name="phone" id="phone" title="Phone" value="" class="phoneUS" type="text" />
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="Submit" class="action submit primary">
+                <span>Submit</span>
+            </button>
+        </div>
+    </div>
+</form>
+</div>
